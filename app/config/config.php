@@ -399,8 +399,8 @@ $config['security_headers'] = [
     // ── API ──
     'api_max_body' => 1048576,
     'cors' => [
-        'allowed_origins' => [],
-        'credentials'     => false,
+        'allowed_origins' => ['https://api-tester.marasigan.dev'],
+        'credentials'     => TRUE,
         'methods'         => 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
         'headers'         => 'Authorization, Content-Type, X-Requested-With',
         'max_age'         => 600,
